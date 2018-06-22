@@ -139,7 +139,7 @@ public class GUI  extends JFrame {
                     Udp_client.sendUdpData(force);
                     Udp_client.sendUdpData(pause);
 
-                  //  Udp_client.sendUdpData(70);
+                 //   Udp_client.sendUdpData(70);
                   //  Udp_client.sendUdpData(70);
 
 
@@ -175,11 +175,11 @@ public class GUI  extends JFrame {
 
 
                     Udp_client.sendUdpData(force);
-                    // потом кнопку в дисабле, пока не придет ответ через udp-recipient, что можно стукать еще раз
 
+
+                  //  Udp_client.sendUdpData(70);
                    // Udp_client.sendUdpData(70);
                    // Udp_client.sendUdpData(70);
-                    //Udp_client.sendUdpData(70);
 
                 }
 
