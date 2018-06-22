@@ -106,8 +106,9 @@ public class GUI  extends JFrame {
                    Udp_client.sendUdpData(minutes);
                    Udp_client.sendUdpData(secunds);
                    Udp_client.sendUdpData(force);
-
-
+                   jTextArea2.append("режим часы  \r\n");
+                   jTextArea2.append("отправляем точное время -  "+hours+"."+minutes+"."+ secunds+"."+ "\r\n");
+                   jTextArea2.append("громкость  "+force+ "\r\n");
 
                }
 
@@ -135,12 +136,12 @@ public class GUI  extends JFrame {
                     Udp_client.sendUdpData(101);
 
 
-
+                    jTextArea2.append("случайный режим   \r\n");
                     Udp_client.sendUdpData(force);
                     Udp_client.sendUdpData(pause);
+                    jTextArea2.append("громкость  "+force+ ", диапазон "+pause+"\r\n");
 
-                 //   Udp_client.sendUdpData(70);
-                  //  Udp_client.sendUdpData(70);
+
 
 
 
@@ -172,14 +173,11 @@ public class GUI  extends JFrame {
                 {
                     Udp_client.sendUdpData(102);
 
-
+                    jTextArea2.append("стукни как следует  \r\n");
 
                     Udp_client.sendUdpData(force);
 
-
-                  //  Udp_client.sendUdpData(70);
-                   // Udp_client.sendUdpData(70);
-                   // Udp_client.sendUdpData(70);
+                    jTextArea2.append("громкость  "+force+ "\r\n");
 
                 }
 

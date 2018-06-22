@@ -66,7 +66,7 @@ public class Udp_client
                     ds.send(pack);
 
 
-                    GUI.jTextArea2.append(s+ "\r\n");
+
 
                     Thread.sleep(100);
 

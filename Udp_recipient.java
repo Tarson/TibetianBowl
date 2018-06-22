@@ -43,12 +43,26 @@ public class Udp_recipient extends Thread {
 
                 ds.receive(packet);
                 int t = packet.getData()[0];
-                GUI.jTextArea2.append("пришло       "+t+ " \r\n");
 
+                if(t==100){
+
+                    GUI.jTextArea2.append("запущен режим часы"+ " \r\n");
+                }
+                if(t==101){
+                    GUI.jTextArea2.append("запущен случайный режим "+ " \r\n");
+                }
+
+                if(t==102){
+                    GUI.jTextArea2.append("запущен ручной режим "+ " \r\n");
+                }
+                if((t!=102)&(t!=101)&(t!=100)) {
+                    GUI.jTextArea2.append("режим не запустился, жмакните еще раз     " + t + " \r\n");
+                   // GUI.jTextArea2.append("пришло"+ t+" \r\n");
+                }
 
             } catch (Exception e) {
 
-                GUI.jTextArea2.append("no incoming packs"+ " \r\n");
+              //  GUI.jTextArea2.append("no incoming packs"+ " \r\n");
 
 
 
