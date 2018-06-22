@@ -11,7 +11,7 @@ public class TibetianBowl {public static void main (String [] args)
         public void run() {
             GUI panel  = new GUI();
             panel.setVisible(true);
-            System.out.println("программа запущена" );
+           // System.out.println("программа запущена" );
         }
     });
 
