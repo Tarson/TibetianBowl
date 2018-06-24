@@ -61,7 +61,7 @@ public class Udp_recipient extends Thread {
                 }
 
                 if(t<90){
-                    GUI.jTextArea2.append("пауза  "+ t+" \r\n");
+                    GUI.jTextArea2.append("пауза  "+ t+" секунд  \r\n");
                 }
 
 
