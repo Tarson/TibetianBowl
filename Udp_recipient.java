@@ -55,10 +55,17 @@ public class Udp_recipient extends Thread {
                 if(t==102){
                     GUI.jTextArea2.append("запущен ручной режим "+ " \r\n");
                 }
-                if((t!=102)&(t!=101)&(t!=100)) {
-                    GUI.jTextArea2.append("режим не запустился, жмакните еще раз     " + t + " \r\n");
-                   // GUI.jTextArea2.append("пришло"+ t+" \r\n");
+                if((t!=102)&(t!=101)&(t!=100)&(t>90)) {
+                    GUI.jTextArea2.append("режим не запустился, жмакните еще раз       \r\n");
+
                 }
+
+                if(t<90){
+                    GUI.jTextArea2.append("пауза  "+ t+" \r\n");
+                }
+
+
+
 
             } catch (Exception e) {
 

@@ -40,7 +40,7 @@ public class GUI  extends JFrame {
     public  int minutes;
     public   int secunds;
     public  int force=1;
-    public  int pause=1;
+    public  int pause=10;
 
 
     static  GUI cp;
@@ -137,9 +137,9 @@ public class GUI  extends JFrame {
 
 
                     jTextArea2.append("случайный режим   \r\n");
-                    Udp_client.sendUdpData(force);
+                    Udp_client.sendUdpData(10);
                     Udp_client.sendUdpData(pause);
-                    jTextArea2.append("громкость  "+force+ ", диапазон "+pause+"\r\n");
+                    jTextArea2.append("громкость  "+10+ ", диапазон "+pause+"\r\n");
 
 
 
