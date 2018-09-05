@@ -137,7 +137,7 @@ public class GUI  extends JFrame {
 
 
                     jTextArea2.append("случайный режим   \r\n");
-                    Udp_client.sendUdpData(10);
+                    Udp_client.sendUdpData(force);
                     Udp_client.sendUdpData(pause);
                     jTextArea2.append("громкость  "+10+ ", диапазон "+pause+"\r\n");
 
